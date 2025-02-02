@@ -1,48 +1,84 @@
-import { motion } from "framer-motion"; // Correction de l'import
-import { Earth } from 'lucide-react';
-import { Menu } from 'lucide-react';
-const Navbar = () => {
-    return (
-        <nav className=" fixed w-full  mx-auto px-4 sm:px-6 lg:px-8 z-50 transition-all duration-300">
-            <div className="flex items-center justify-around h-20 w-full">
+import { motion } from "framer-motion";
+import { Earth, Menu, X } from 'lucide-react';
+import { useState } from "react";
 
+const Navbar = () => {
+    const [isOpen, setIsOpen] = useState<boolean>(false);
+
+    return (
+        <nav className="fixed w-full bg-white shadow-md z-50">
+            <div className="flex items-center justify-between h-20 px-6 lg:px-10">
                 {/* Logo et Titre */}
-                <div className="flex items-center ml-10 whitespace-nowrap
-                 flex-1"> {/* Ajout de flex-1 */}
+                <div className="flex items-center space-x-3">
                     <motion.div
                         initial={{ opacity: 0, x: -70, rotate: 0 }}
                         animate={{ opacity: 1, x: 0, rotate: 360 }}
                         transition={{ duration: 1, ease: "linear" }}
                     >
-                        <Earth className="h-8 w-8 text-blue-700 mr-2" />
+                        <Earth size={30} className="text-blue-700" />
                     </motion.div>
-                    <span className="font-Pacifico tracking-wider text-3xl text-blue-700">World Travel</span>
+                    <span className="font-Pacifico tracking-wider text-2xl text-blue-700">
+                        World Travel
+                    </span>
                 </div>
 
-                {/* Menu */}
-                <div className="hidden mdd:block font-Pacifico text-blue-600 text-xl">
-                    <div className="ml-10 flex items-baseline space-x-8">
+                {/* Menu Desktop */}
+                <div className="hidden md:flex space-x-8 font-Pacifico text-blue-600 text-lg">
+                    {["Home", "Destinations", "Services", "About", "Contact"].map((item, i) => (
+                        <motion.a
+                            key={item}
+                            initial={{ opacity: 0, x: -100 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            whileHover={{ scale: 1.2 }}
+                            transition={{ delay: i * 0.2, duration: 0.4, ease: "linear" }}
+                            href={`#${item.toLowerCase()}`}
+                            className="hover:text-blue-800"
+                        >
+                            {item}
+                        </motion.a>
+                    ))}
+                </div>
+
+                {/* Burger Button */}
+                <div className="md:hidden">
+                    <button onClick={() => setIsOpen(!isOpen)}>
+                        {isOpen ? (
+                            <X size={28} className="text-blue-700 cursor-pointer" />
+                        ) : (
+                            <Menu size={28} className="text-blue-700 cursor-pointer" />
+                        )}
+                    </button>
+                </div>
+            </div>
+
+            {/* Menu Mobile */}
+            {isOpen && (
+                <motion.div
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    className="absolute left-0 top-full w-full bg-white shadow-lg md:hidden"
+                >
+                    <div className="flex flex-col items-center py-4 space-y-4 font-Pacifico text-blue-700 text-lg">
                         {["Home", "Destinations", "Services", "About", "Contact"].map((item, i) => (
                             <motion.a
                                 key={item}
-                                initial={{ opacity: 0, x: -100 }}
+                                initial={{ opacity: 0, x: -50 }}
                                 animate={{ opacity: 1, x: 0 }}
-                                whileHover={{ scale: 1.2 }}
-                                transition={{ delay: i * 0.5, duration: 0.6, ease: "linear" }}
-                                href={`"${item}`}
-                                className="  px-3 py-2 rounded-md "
+                                whileHover={{ scale: 1.1 }}
+                                transition={{ delay: i * 0.2, duration: 0.4, ease: "linear" }}
+                                href={`#${item.toLowerCase()}`}
+                                className="hover:text-blue-800"
                             >
                                 {item}
                             </motion.a>
                         ))}
                     </div>
-
-                </div>
-                {/* burger button */}
-                <Menu className="h-8 w-8 mdd:hidden text-blue-700" />
-            </div>
+                </motion.div>
+            )}
         </nav>
     );
-}
+};
 
 export default Navbar;
