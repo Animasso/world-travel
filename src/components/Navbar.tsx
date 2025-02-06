@@ -4,7 +4,6 @@ import { useState } from "react";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
-
     return (
         <nav className="fixed w-full bg-white shadow-md z-50">
             <div className="flex items-center justify-between h-20 px-6 lg:px-10">
