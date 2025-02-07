@@ -23,7 +23,7 @@ const Navbar = () => {
 
                 {/* Menu Desktop */}
                 <div className="hidden md:flex space-x-8 font-Pacifico text-blue-600 text-lg">
-                    {["Home", "Destinations", "Services", "About", "Contact"].map((item, i) => (
+                    {["Home", "Destinations", "Services", "Gallery", "Contact"].map((item, i) => (
                         <motion.a
                             key={item}
                             initial={{ opacity: 0, x: -100 }}
@@ -60,7 +60,7 @@ const Navbar = () => {
                     className="absolute left-0 top-full w-full bg-white shadow-lg md:hidden"
                 >
                     <div className="flex flex-col items-center py-4 space-y-4 font-Pacifico text-blue-700 text-lg">
-                        {["Home", "Destinations", "Services", "About", "Contact"].map((item, i) => (
+                        {["Home", "Destinations", "Services", "Gallery", "Contact"].map((item, i) => (
                             <motion.a
                                 key={item}
                                 initial={{ opacity: 0, x: -50 }}

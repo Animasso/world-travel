@@ -7,7 +7,7 @@ const Services = () => {
         <section className=" py-20 white-50 " id="services">
             <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
                 <motion.div initial={{ opacity: 0, x: -200 }}
-                    viewport={{ once: true, amount: 0.3 }}
+                    viewport={{ amount: 0.2 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }} className=" text-center mb-16" >
                     <h2 className=" font-Pacifico text-4xl font-bold mb-4 text-gray-900 ">Services</h2>

@@ -14,3 +14,14 @@ export interface ServicesType {
   description: string;
   icon: LucideIcon;
 }
+export interface GalleryType {
+  title: string;
+  url: string;
+}
+export interface TestimonialsType {
+  id: number;
+  name: string;
+  image: string;
+  text: string;
+  rating: number;
+}

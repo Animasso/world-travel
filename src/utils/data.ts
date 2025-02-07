@@ -1,9 +1,23 @@
-import { DestinationType, ServicesType } from "../types/types";
+import {
+  DestinationType,
+  GalleryType,
+  ServicesType,
+  TestimonialsType,
+} from "../types/types";
 import SeychellesImage from "../assets/seychelle.jpg";
 import MaldivesImage from "../assets/maldive.jpg";
 import NewYorkImage from "../assets/new-york.jpg";
 import DubaiImage from "../assets/dubai.jpg";
 import BaliImage from "../assets/bali.jpg";
+import Beach from "../assets/plage privé.jpeg";
+import Restaurant from "../assets/reastaurant.png";
+import Suits from "../assets/suite presidentielle.jpg";
+import Forest from "../assets/verdure.jpg";
+import Villa from "../assets/villa piscine.jpg";
+import Night from "../assets/night-club.jfif";
+import Alex from "../assets/alexander-hipp.jpg";
+import Courtney from "../assets/courtney-cook.jpg";
+import Mimi from "../assets/michael-dam.jpg";
 import {
   Hotel,
   Bus,
@@ -95,5 +109,55 @@ export const servicesData: ServicesType[] = [
     description:
       "Explore destinations with expert tour guides for an enriching experience.",
     icon: User,
+  },
+];
+
+export const galleryData: GalleryType[] = [
+  {
+    title: "Private beach",
+    url: Beach,
+  },
+  {
+    title: "Star Restaurants",
+    url: Restaurant,
+  },
+  {
+    title: "Presidensial Suits",
+    url: Suits,
+  },
+  {
+    title: "Green Escape",
+    url: Forest,
+  },
+  {
+    title: "Villa with superb pool",
+    url: Villa,
+  },
+  {
+    title: "Parternership with the best night-club",
+    url: Night,
+  },
+];
+export const TestimonialsData: TestimonialsType[] = [
+  {
+    id: 1,
+    name: "Alexander Hip",
+    image: Alex,
+    text: "I absolutely loved my trip to Dubai! The city is incredible and the people are so friendly.",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Courtney Smith",
+    image: Courtney,
+    text: "My husband and I absolutely flew away to Bali! The culture and food are amazing.",
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: "Mimi Johnson",
+    image: Mimi,
+    text: "We were thrilled to visit Maldives! The beaches and temples are simply breathtaking.",
+    rating: 5,
   },
 ];

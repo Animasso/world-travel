@@ -11,7 +11,7 @@ const Destinations = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
                 {/* Titre et description */}
                 <motion.div
-                    initial={{ opacity: 0, y: -20 }}
+                    initial={{ opacity: 0, y: -100 }}
                     transition={{ duration: 1 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     className="text-center mb-16"
