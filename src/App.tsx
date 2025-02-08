@@ -2,6 +2,7 @@ import Destinations from "./components/Destinations"
 import Gallery from "./components/Gallery"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
+import Reservation from "./components/Reservation"
 import Services from "./components/Services"
 import Testimonials from "./components/Testimonials"
 
@@ -15,6 +16,7 @@ const App = () => {
       <Services />
       <Gallery />
       <Testimonials />
+      <Reservation />
     </div>
   )
 }

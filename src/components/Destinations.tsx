@@ -5,7 +5,9 @@ import { destinationsData } from "../utils/data";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "swiper/swiper-bundle.css";
 
+
 const Destinations = () => {
+
     return (
         <section className="py-20 bg-white" id="destinations">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">

@@ -25,3 +25,19 @@ export interface TestimonialsType {
   text: string;
   rating: number;
 }
+export interface FormErrorType {
+  destination?: string;
+  startDate?: string;
+  returnDate?: string;
+  travelers?: string;
+  roomType?: string;
+  specialRequest?: string;
+}
+export interface FormType {
+  destination?: string;
+  startDate: string;
+  returnDate?: string;
+  travelers?: string;
+  roomType?: string;
+  specialRequest?: string;
+}
