@@ -5,7 +5,7 @@ import { MoveRight } from "lucide-react";
 const Hero = () => {
     return (
         <div className="relative h-screen">
-            {/* Image de fond */}
+            {/* Image  */}
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${HeroImage})` }}
@@ -13,7 +13,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-black opacity-40"></div>
             </div>
 
-            {/* Contenu du Hero */}
+            {/*  Hero */}
             <div className="relative z-10 h-full flex items-center justify-center text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}

@@ -33,7 +33,7 @@ export const destinationsData: DestinationType[] = [
     name: "Dubai",
     image: DubaiImage,
     description:
-      "A luxurious city with iconic skyscrapers, desert adventures, and world-class shopping.",
+      "Dubai, a dazzling oasis in the Middle East, is renowned for its breathtaking skyline, luxurious lifestyle, and adventurous desert experiences. From the towering Burj Khalifa, the world's tallest building, to the opulent shopping malls like The Dubai Mall, the city is a haven for travelers seeking both modern extravagance and cultural depth. Wander through the historic Al Fahidi district, take a sunset cruise in Dubai Marina, or embark on an unforgettable desert safari. Whether you’re looking for relaxation on Jumeirah Beach, thrilling rides at Atlantis Water Park, or fine dining in Michelin-starred restaurants, Dubai is a city that promises unparalleled experiences.",
     price: "Starting from $500",
   },
   {
@@ -41,7 +41,7 @@ export const destinationsData: DestinationType[] = [
     name: "Seychelles",
     image: SeychellesImage,
     description:
-      "A tropical paradise with crystal-clear waters, white sandy beaches, and exotic wildlife.",
+      "Nestled in the heart of the Indian Ocean, Seychelles is a paradise of unspoiled beaches, crystal-clear waters, and lush tropical forests. With 115 breathtaking islands, this archipelago offers pristine nature reserves, vibrant coral reefs, and an abundance of exotic wildlife, including the rare giant Aldabra tortoise. Visit the picturesque beaches of Anse Lazio and Anse Source d'Argent, explore the enchanting Vallée de Mai—a UNESCO World Heritage site—or dive into the turquoise waters to discover a world of marine biodiversity. Whether you're seeking a romantic getaway, an adventurous hiking experience, or ultimate relaxation, Seychelles provides an idyllic escape from reality.",
     price: "Starting from $700",
   },
   {
@@ -49,7 +49,7 @@ export const destinationsData: DestinationType[] = [
     name: "New York",
     image: NewYorkImage,
     description:
-      "The city that never sleeps, offering Broadway shows, skyscrapers, and diverse culture.",
+      "New York City, the pulsating heart of the world, is a melting pot of culture, innovation, and history. From the towering skyscrapers of Manhattan to the artistic streets of Brooklyn, the city offers an endless array of experiences. Walk through Central Park, admire the dazzling lights of Times Square, or explore the legendary Museum of Modern Art (MoMA) and The Metropolitan Museum of Art. Take a ferry to the Statue of Liberty, indulge in world-class cuisine from street vendors to Michelin-starred restaurants, or experience the energy of a Broadway show. Whether you're looking for history, nightlife, or iconic landmarks, New York City is a destination that never sleeps.",
     price: "Starting from $400",
   },
   {
@@ -57,14 +57,15 @@ export const destinationsData: DestinationType[] = [
     name: "Bali",
     image: BaliImage,
     description:
-      "A dream destination with lush rice terraces, beautiful temples, and breathtaking beaches.",
+      "Bali, known as the 'Island of the Gods,' is a breathtaking destination offering stunning natural landscapes, spiritual serenity, and a vibrant local culture. Surrounded by lush green rice terraces, mystical temples, and some of the world's most beautiful beaches, Bali is perfect for travelers seeking both relaxation and adventure. Visit the iconic Uluwatu Temple perched on a cliff, explore the sacred Monkey Forest in Ubud, or unwind in the tranquil waters of Nusa Penida. Whether you're surfing the waves of Kuta, indulging in traditional Balinese cuisine, or experiencing rejuvenating yoga retreats, Bali offers an enchanting blend of nature, culture, and tranquility.",
     price: "Starting from $350",
   },
   {
     id: 5,
-    name: "Maldive",
+    name: "Maldives",
     image: MaldivesImage,
-    description: "A tropical place with fantastic villas",
+    description:
+      "The Maldives is an unrivaled tropical paradise, famous for its pristine white-sand beaches, overwater bungalows, and crystal-clear turquoise waters. Consisting of over 1,000 coral islands, this breathtaking destination offers the ultimate escape into serenity and luxury. Dive into the world’s most mesmerizing coral reefs, swim alongside manta rays and whale sharks, or enjoy a private candlelit dinner under the stars. With its exclusive resorts, world-class spas, and unparalleled ocean views, the Maldives is the perfect retreat for honeymooners, adventure seekers, and anyone looking for an unforgettable island getaway.",
     price: "Starting from $600",
   },
 ];

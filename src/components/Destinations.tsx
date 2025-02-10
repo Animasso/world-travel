@@ -3,6 +3,7 @@ import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { destinationsData } from "../utils/data";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import "swiper/swiper-bundle.css";
 
 
@@ -29,9 +30,9 @@ const Destinations = () => {
                     </p>
                 </motion.div>
 
-                {/* Swiper avec les destinations */}
+
                 <div className="relative">
-                    {/* Boutons de navigation personnalisés */}
+
                     <div className="custom-swiper-prev absolute top-1/2 left-0 z-10 -translate-y-1/2 bg-white rounded-full p-3 shadow-lg cursor-pointer">
                         <ChevronLeft className="w-8 h-8 text-blue-600" />
                     </div>
@@ -82,14 +83,16 @@ const Destinations = () => {
                                             {destination.name}
                                         </h3>
                                         <p className="text-gray-700 text-base mb-2">
-                                            {destination.description}
+                                            {destination.description.slice(0, 100) + "..."}
                                         </p>
                                         <p className="font-bold text-gray-900 mb-2">
                                             {destination.price}
                                         </p>
-                                        <button className="w-full cursor-pointer px-6 py-2 bg-blue-500 transition-colors duration-300 text-white rounded-md hover:bg-blue-700">
-                                            Book now
-                                        </button>
+                                        <Link to={`/destination/${destination.id}`} className="w-full block">
+                                            <button className="w-full px-6 py-2 bg-blue-500 transition-colors duration-300 text-white rounded-md hover:bg-blue-700">
+                                                See More details
+                                            </button>
+                                        </Link>
                                     </div>
                                 </motion.div>
                             </SwiperSlide>
