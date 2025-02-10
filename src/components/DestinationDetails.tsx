@@ -27,7 +27,6 @@ const DestinationDetails = () => {
                         className="w-full h-96 object-cover rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
                     />
                 </div>
-
                 {/* Détails  */}
                 <div className="md:w-1/2 space-y-6 py-5 px-5">
                     <h1 className="text-4xl font-Pacifico tracking-widest font-bold text-gray-900">{destination.name}</h1>
